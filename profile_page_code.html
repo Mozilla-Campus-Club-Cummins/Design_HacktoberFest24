@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f5f9;
+            height: 100vh;
+        }
+
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #34495e;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Center items vertically */
+            z-index: 1000;
+        }
+
+        .navbar h1 {
+            color: white; /* Text color */
+            margin-left: 20px; /* Space from the left */
+            font-size: 24px; /* Font size for the title */
+        }
+
+        .profile-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid white;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-dropdown {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            padding: 20px;
+            visibility: hidden;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 10;
+        }
+
+        .profile-dropdown.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .profile-photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 3px solid #a1c5c9;
+            margin: 0 auto 15px auto;
+            display: block;
+        }
+
+        .user-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .edit-button {
+            display: block;
+            width: 100%;
+            background-color: #76b5c5;
+            color: white;
+            border: none;
+            padding: 8px 0;
+            border-radius: 20px;
+            text-align: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .edit-button:hover {
+            background-color: #5b98a8;
+        }
+
+        .profile-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .profile-list li {
+            padding: 10px;
+            border-bottom: 1px solid #ececec;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .profile-list li:hover {
+            background-color: #f0f5f9;
+        }
+
+        .profile-list li i {
+            margin-right: 10px;
+            color: #76b5c5;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>My Profile</h1> <!-- Title in Navbar -->
+        <img src="C:\Users\Nittya Kanse\Pictures\ss.png" alt="Profile Icon" class="profile-icon" id="profileIcon">
+    </div>
+
+    <!-- Profile Dropdown (hidden initially) -->
+    <div class="profile-dropdown" id="profileDropdown">
+        <img src="C:\Users\Nittya Kanse\Pictures\ss.png" alt="User Photo" class="profile-photo">
+        <div class="user-name">John Doe</div>
+
+        <button class="edit-button">Edit Profile</button>
+
+        <!-- Profile Options List -->
+        <ul class="profile-list">
+            <li><i class="fas fa-cog"></i> Settings</li>
+            <li><i class="fas fa-user-friends"></i> Friends</li>
+            <li><i class="fas fa-users"></i> New Group</li>
+            <li><i class="fas fa-life-ring"></i> Support</li>
+            <li><i class="fas fa-share-alt"></i> Share</li>
+            <li><i class="fas fa-info-circle"></i> About Us</li>
+        </ul>
+    </div>
+
+    <script>
+        const profileIcon = document.getElementById('profileIcon'); // Profile icon element
+        const profileDropdown = document.getElementById('profileDropdown'); // Profile dropdown element
+
+        // Toggle profile dropdown visibility on icon click
+        profileIcon.addEventListener('click', () => {
+            profileDropdown.classList.toggle('active'); // Toggle the active class
+        });
+
+        // Click outside the profile to close it
+        window.addEventListener('click', (event) => {
+            if (event.target !== profileIcon && !profileDropdown.contains(event.target)) {
+                profileDropdown.classList.remove('active'); // Remove active class if clicked outside
+            }
+        });
+    </script>
+</body>
+
+</html>
