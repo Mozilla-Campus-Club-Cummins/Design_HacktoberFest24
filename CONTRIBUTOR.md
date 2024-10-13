@@ -1,6 +1,6 @@
 # Contribution guide
 
-![github-profile]Welcome to **[Design_HacktoberFest24]**! We’re excited to have you contribute and help improve the project. Whether it’s fixing bugs, improving documentation, or building new features, your contributions are valuable to us. This guide will walk you through the process of contributing to the project.
+![github-profile]Welcome to **[Mozilla-Campus-Club-Cummins]**! We’re excited to have you contribute and help improve the project. Whether it’s fixing bugs, improving documentation, or building new features, your contributions are valuable to us. This guide will walk you through the process of contributing to the project.
 
 - [Ways to contribute](#ways-to-contribute)
 - [Finding an issue](#finding-an-issue)
