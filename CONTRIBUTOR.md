@@ -1,6 +1,6 @@
 # Contribution guide
 
-![github-profile](https://user-images.githubusercontent.com/10350960/166113119-629295f6-c282-42c9-9379-af2de5ad4338.png)
+![github-profile]Welcome to **[Design_HacktoberFest24]**! We’re excited to have you contribute and help improve the project. Whether it’s fixing bugs, improving documentation, or building new features, your contributions are valuable to us. This guide will walk you through the process of contributing to the project.
 
 - [Ways to contribute](#ways-to-contribute)
 - [Finding an issue](#finding-an-issue)
