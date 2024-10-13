@@ -54,7 +54,7 @@ The best way to reach us with a question when contributing is to use the followi
 
 ## Pull request process
 
-The MDN Web Docs project has a well-defined pull request process which is documented in the [Pull request guidelines](https://developer.mozilla.org/en-US/docs/MDN/Community/Pull_requests).
+The Mozilla-Campus-Club-Cummins has a well-defined pull request process which is documented in the [Pull request guidelines](https://developer.mozilla.org/en-US/docs/MDN/Community/Pull_requests).
 Make sure you read and understand this process before you start working on a pull request.
 
 ### Forking and cloning the project
